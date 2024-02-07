@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner
+{
+    height: 100vh;
+    width: 100%;
+    background-color: #191919 ;
+    background-position: center;
+    background-size: cover;
+}
+.navbar
+{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    padding-left: 0px;
+    padding-right: 10px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+.navbar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar ul li a.active
+{
+    background-color:  #009688;
+    color: #fff;
+    border: 10px solid #009688;
+    border-radius: 25px;
+}
+.navbar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after
+{
+    width: 100%;
+}
+/*Body of OrderPage*/
+.body-container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.body-container h1
+{
+    padding: 20px 0;
+    color: aquamarine;
+}
+.cart
+{
+    display: flex;
+}
+.products
+{
+    flex: 0.75;
+}
+.product
+{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid silver;
+}
+.product:hover
+{
+    box-shadow: 2px 2px 4px silver;
+    transform: scale(1.01);
+}
+.product img
+{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.product img:hover
+{
+    transform: scale(1.04);
+}
+.product-info
+{
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+.product-name,.product-price,.product-offer
+{
+    margin-bottom: 20px;
+}
+.product-remove
+{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 25px;
+    background-color: aqua;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.product-remove:hover
+{
+    background-color: #fff;
+    color: aqua;
+    font-weight: 600;
+    border: 1px solid aqua;
+}
+.product-quantity input
+{
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+}
+.fa
+{
+    margin-right: 5px;
+}
+.cart-total
+{
+    color: #fff;
+    flex: 0.25;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    height: 240px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+.cart-total p
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.cart-total a
+{
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: tomato;
+    color: #fff;
+    text-decoration: none;
+}
+.cart-total a:hover
+{
+    background-color: red;
+}
+/*Footer*/
+.footer-container
+{
+    max-width: 85%;
+    margin: auto;
+}
+.row
+{
+    display: flex;   
+}
+ul
+{
+    list-style: none;
+}
+.footer
+{
+    background-color: #404040;
+    padding: 20px;
+}
+.footer-col
+{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4
+{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+.footer-col ul li a
+{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover
+{
+    color: #E0E0E0;
+    padding-left: 8px;
+}
+.footer-col .social-links
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover
+{
+    color: #24262b;
+    background-color: #fff;
+}
+.footer-container p
+{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
